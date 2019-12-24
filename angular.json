@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Gateway": {
+    "buddyChat": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Gateway",
+            "outputPath": "dist/buddyChat",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Gateway:build"
+            "browserTarget": "buddyChat:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Gateway:build:production"
+              "browserTarget": "buddyChat:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Gateway:build"
+            "browserTarget": "buddyChat:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Gateway:serve"
+            "devServerTarget": "buddyChat:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Gateway:serve:production"
+              "devServerTarget": "buddyChat:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "Gateway"
+  "defaultProject": "buddyChat"
 }
